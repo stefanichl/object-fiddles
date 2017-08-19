@@ -3,7 +3,12 @@
 
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
-  //Code here
+  var me = {
+    name: 'Lauren',
+    age: 31,
+  };
+ alert(me.name);
+
 
 
 
@@ -17,7 +22,14 @@
 
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+  var favoriteThings = {
+    band: 'Imagine Dragons',
+    food: 'pizza',
+    person: 'Bruno Mars', 
+    book: 'A Song of Ice and Fire',
+    movie: 'LOTR',
+    holiday: 'none'
+  };
 
 
 
@@ -27,7 +39,8 @@
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-  //Code here
+  favoriteThings.car = 'Jeep';
+  favoriteThings.brand = 'Kate Spade';
 
 
 
@@ -35,7 +48,8 @@
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
-  //Code here
+  favoriteThings.food = 'Chicken Nuggets';
+  favoriteThings.book = 'Harry Potter';
 
 
 
@@ -55,7 +69,13 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. 
 */
 
-  //Code here
+  var backPack = {};
+
+  var item = 'firstPocket';
+
+  backPack[item] = 'chapstick';
+
+  backPack.color = 'yellow';
 
 
 
@@ -64,7 +84,7 @@ that is named color, with the value being the color of your backpack.
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+  alert(backPack);
 
  
 
@@ -74,7 +94,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-  //Code here
+  console.log(backPack);
 
 
 
@@ -96,7 +116,8 @@ var user2 = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+  user2.name = 'Tyler S. McGinnis';
+  user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
